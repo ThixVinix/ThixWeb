@@ -49,31 +49,31 @@ p {
 	<tr>
 		<td>
 	<center>
-	<form>
+	<form  method="post" action="http://formulario-ucsal.appspot.com/DadosFormulario">
 	<p> E-mail: </p>
-	<input type="text" name="E-mail" />
+	<input type="email" required name="E-mail" />
 		<p>Senha:</p>
-	<input type="password" name="Senha" />
+	<input type="password" required name="Senha" />
 	<p>Confirme sua Senha:</p>
-	<input type="password" />
+	<input type="password" required name="Senha" />
 		
 		<p> Sexo: </p>
 		<input type="radio" name="sexo"> Masculino
 		<input type="radio" name="sexo"> Feminino
 		<p> Estado: </p>
-		<select name="Estado">
+		<select required name="Estado">
 			<option> SP </option>
 			<option> MG </option>
 			<option> RJ </option>
 			<option> RS </option>
 			<option> BA </option>
 		</select>
-		<p> Biografia: *Opcional* </p>
-		<textarea name="Biografia"></textarea>
+		<p> Comentário </p>
+		<textarea name="Biografia required"></textarea>
 		<p> Você concorda com os termos de uso? </p>
 		<a href="https://thiagovin.github.io/ThixWeb/termosDeUso.html"> Termos de Uso</a> 
 		<br/>
-		<input type="checkbox"> Eu li e concordo com os termos de uso. 
+		<input required type="checkbox"> Eu li e concordo com os termos de uso. 
 		<br/><br/>
 		<input type="submit" value="Confirmar"/>
 		<br/>
